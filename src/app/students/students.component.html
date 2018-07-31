@@ -1,3 +1,10 @@
+<h2>
+  <ul class="students">
+    <li *ngFor="let student of students" (click)="onSelect(student)">
+      <span class="badge">{{student.studentid}}</span>{{student.name}}
+    </li>
+  </ul>
+</h2>
 <h2>{{student.name | uppercase}} Details</h2>
 <div><span>id: </span>{{student.id}}</div>
 <div>
