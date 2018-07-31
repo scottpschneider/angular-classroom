@@ -3,13 +3,13 @@
     <li *ngFor="let student of students" 
     [class.selected]="student === selectedStudent"
     (click)="onSelect(student)">
-      <span class="badge">{{student.id}}</span>{{student.name}}
+      <span class="badge">{{student.StudentId}}</span>{{student.name}}
     </li>
   </ul>
 </h2>
 <div *ngIf="selectedStudent">
 <h2>{{selectedStudent.name | uppercase}} Details</h2>
-<div><span>id: </span>{{selectedStudent.id}}</div>
+<div><span>StudentId: </span>{{selectedStudent.StudentId}}</div>
 <div>
   <label>name:
     <input [(ngModel)]="selectedStudent.name" placeholder="name">
