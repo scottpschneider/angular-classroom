@@ -10,4 +10,4 @@ export const STUDENTS: Student[] = [
     { StudentId: 16, name: 'Anna Anderson'},
     { StudentId: 17, name: 'Olaf Oscar'},
     { StudentId: 18, name: 'Christof Jorgensen'},
-]
+];
