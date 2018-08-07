@@ -9,7 +9,7 @@ import { STUDENTS } from '../mock-students';
 })
 export class StudentsComponent implements OnInit {
   students = STUDENTS;
-  selectedStudent:Student;
+  selectedStudent:Student
   
   constructor() { }
 
