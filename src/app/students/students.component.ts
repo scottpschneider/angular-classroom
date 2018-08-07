@@ -12,12 +12,12 @@ export class StudentsComponent implements OnInit {
   selectedStudent:Student
   
   constructor(private studentService: StudentService) { }
-
+  
   ngOnInit() {
+    this.getStudents();
   }
   getStudents(): void {
     this.students=this.studentService.getStudents();
-    this.getStudents();
   }
 
   onSelect(student: Student): void {
