@@ -8,8 +8,8 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class StudentService {
-        getStudents(): Student[]{
-          return STUDENTS;
+        getStudents(): Observable<Student[]> {
+          return of(STUDENTS);
         }
 
   constructor() { }
